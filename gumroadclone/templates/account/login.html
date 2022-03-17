@@ -8,7 +8,7 @@
 
 {% block inner %}
 
-<h1>{% translate "Sign In" %}</h1>
+<h1 class="font-extrabold font-body">{% translate "Sign In" %}</h1>
 
 {% get_providers as socialaccount_providers %}
 
@@ -37,7 +37,7 @@
 
 {% else %}
   {% if ACCOUNT_ALLOW_REGISTRATION %}
-    <p>
+    <p class="font-medium font-body">
       {% blocktranslate trimmed %}
         If you have not created an account yet, then please
         <a href="{{ signup_url }}">sign up</a> first.
@@ -46,7 +46,7 @@
   {% endif %}
 {% endif %}
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
+<form class="login font-bold font-body" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form|crispy }}
   {% if redirect_field_value %}
