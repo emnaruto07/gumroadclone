@@ -92,6 +92,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "gumroadclone.users",
+    "gumroadclone.products.apps.ProductsConfig",
+
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
