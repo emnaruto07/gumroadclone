@@ -1,5 +1,6 @@
 {% load static i18n %}<!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
+{% load static tailwind_tags %}
 <html lang="{{ LANGUAGE_CODE }}">
   <head>
     <meta charset="utf-8">
@@ -12,6 +13,8 @@
     <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
 
     {% block css %}
+		{% tailwind_css %}
+    
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -92,7 +95,7 @@
       {% endif %}
 
       {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
+        <p class="font-bold font-body">Use this document as a way to quick start any new project.</p>
       {% endblock content %}
 
     </div> <!-- /container -->
