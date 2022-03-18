@@ -6,13 +6,11 @@ from django.views import defaults as default_views
 from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
-from gumroadclone.products.views import ProductListView
+from products.views import ProductListView
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
-    path(
-        "discover/", ProductListView.as_view(), name="discover"
-    ),
+    path("discover/", ProductListView.as_view(), name="discover"),
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
