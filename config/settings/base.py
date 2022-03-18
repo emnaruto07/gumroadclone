@@ -88,11 +88,10 @@ THIRD_PARTY_APPS = [
     'tailwind',
     'theme',
     'django_browser_reload',
-    # 'products',
 ]
 
 LOCAL_APPS = [
-    "gumroadclone.users",
+    "gumroadclone.users.apps.UsersConfig",
     "gumroadclone.products.apps.ProductsConfig",
 
     # Your stuff: custom apps go here
