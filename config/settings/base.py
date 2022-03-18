@@ -87,7 +87,7 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     'tailwind',
     'theme',
-    'django_browser_reload'
+    'django_browser_reload',
 ]
 
 LOCAL_APPS = [
