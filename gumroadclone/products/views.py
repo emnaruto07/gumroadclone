@@ -1,5 +1,5 @@
 from django.views import generic
-from gumroadclone.products.models import Product
+from .models import Product
 
 
 class ProductListView(generic.ListView):

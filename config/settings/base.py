@@ -91,8 +91,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "gumroadclone.users.apps.UsersConfig",
-    "gumroadclone.products.apps.ProductsConfig",
+    "gumroadclone.users",
+    "gumroadclone.products",
 
     # Your stuff: custom apps go here
 ]
